@@ -1,0 +1,29 @@
+{
+    "name": "blobswop/dpd-php-api",
+    "type": "library",
+    "description": "PHP wrapper for DPD Germany SOAP API",
+    "require": {
+        "ext-soap": "^8.0",
+        "ext-mbstring": "*",
+        "php": "^8.0"
+    },
+    "keywords": [
+        "dpd",
+        "api",
+        "wrapper",
+        "tracking",
+        "shipping"
+    ],
+    "authors": [
+        {
+            "name": "Sergei Deriabin",
+            "email": "deryabinsergey@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dpd\\": "src"
+        }
+    }
+}
