@@ -29,7 +29,15 @@ class StoreOrdersResponseType
     {
         return $this->output ?? null;
     }
-
+    
+    /**
+     * @return string|null
+     */
+    public function getPDF(): ?string
+    {
+        return $this->parcellabelsPDF ?? null;
+    }
+    
     /**
      * @return ShipmentResponse[]
      */
