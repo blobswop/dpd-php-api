@@ -18,6 +18,11 @@ class StoreOrdersResponseType
     protected mixed $shipmentResponses;
 
     /**
+     * Contains response data for the generated PDF label.
+     */
+    protected string $parcellabelsPDF;
+
+    /**
      * @return OutputType|null
      */
     public function getOutput(): ?OutputType
