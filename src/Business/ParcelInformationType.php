@@ -19,9 +19,9 @@ class ParcelInformationType
 
     /**
      * The content for the parcel.
-     * @var OutputType
+     * @var array
      */
-    protected OutputType $output;
+    protected array $output = [];
 
     /**
      * @return string|null
@@ -40,10 +40,20 @@ class ParcelInformationType
     }
 
     /**
-     * @return OutputType|null
+     * @return array
      */
-    public function getOutput(): ?OutputType
+    public function getOutput(): array
     {
-        return $this->output ?? null;
+        return $this->output;
+    }
+
+    /**
+     * @var OutputType
+     * @return ParcelInformationType
+     */
+    public function addOutput(OutputType $o): self
+    {
+        $this->output[] = $o;
+        return $this;
     }
 }
